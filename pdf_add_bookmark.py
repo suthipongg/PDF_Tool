@@ -79,8 +79,6 @@ def parse_opt():
 
 
 if __name__ == "__main__":
-    # opt = parse_opt()
-    # main_bmk(**vars(opt))
-    pdf = r"C:\Users\Lenovo\Desktop\my_python\C++ slide.pdf"
-    bmk = r"C:\Users\Lenovo\Desktop\my_python\C++_slide.bmk"
-    main_bmk(pdf, bmk, replace_input=True)
+    opt = parse_opt()
+    main_bmk(**vars(opt))
+    print("success")
